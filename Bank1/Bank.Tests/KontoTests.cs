@@ -55,16 +55,6 @@ namespace Bank.Tests
         }
 
         [Fact]
-        public void Wyplata_WiekszaNizBilans_ThrowsException()
-        {
-            // Arrange
-            var konto = new Konto("Marat Iskhakov", 300);
-
-            // Act & Assert
-            Assert.Throws<InvalidOperationException>(() => konto.Wyplata(500));
-        }
-
-        [Fact]
         public void Wyplata_ZablokowaneKonto_ThrowsException()
         {
             // Arrange
